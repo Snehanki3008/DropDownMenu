@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1506143925201-0252c51780b0?auto=format&fit=crop&q=60&w=700&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlJTIwZm9yJTIwZ29vZ2xlJTIwZG9jfGVufDB8fDB8fHww://images.unsplash.com/photo-1697316346921-d89d1d388029?auto=format&fit=crop&q=60&w=700&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-bar {
+    background: rgb(14, 98, 98);
+    text-align: center;
+    height: 150px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+}
+
+.menu-bar ul li {
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: rgb(57, 138, 138);
+    border-radius: 10px;
+}
+
+.submenu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(27, 81, 90);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li {
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted white;
+    background: rgb(57, 138, 138);
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li a:hover {
+    color: rgb(57, 138, 138);
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+
